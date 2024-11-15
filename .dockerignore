@@ -1,0 +1,35 @@
+# 依赖
+node_modules
+.pnp
+.pnp.js
+
+# 测试覆盖
+coverage
+
+# next.js
+.next/
+out/
+build
+dist
+
+# 环境变量
+.env*.local
+.env
+
+# 日志
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# 其他
+.DS_Store
+*.pem

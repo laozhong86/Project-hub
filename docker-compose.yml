@@ -1,0 +1,17 @@
+version: '3'
+services:
+  web:
+    container_name: project-hub-web
+    build: .
+    ports:
+      - "3002:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - WATCHPACK_POLLING=true
+    command: sh -c "npm install && npm run dev"
+    stdin_open: true
+    tty: true
+    network_mode: "bridge"
